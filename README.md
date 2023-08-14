@@ -7,6 +7,19 @@ A voting api and database that mimics a Democratic Party Election. Created with 
 - Need to deploy to Netlify instead of Heroku (Heroku no longer free)
 - Adding more features to the existing routes
 
+## Routes/Features
+### /auth
+JWT Authentication/login system for monitored access
+
+### /candidates
+CRUD operations for candidates in elections as well as display of all the candidates and their info
+
+### /votes
+Way to cast a vote (dir: 1 is add a vote, anything else is delete)
+
+### /users
+View a specific user of the application as well as creation of new ones
+
 ## Installation and Setup Instructions
 Clone down this repository:
 `git clone https://github.com/VarKal23/Digital-Voting-Backend.git`
@@ -45,4 +58,4 @@ This was a project I wanted to develop because I've felt that as technology has 
 
 This project was challenging because this was my deep dive into backend development as well as dipping my toes in DevOps. I was learning a lot of the tools along the way and testing them in many different ways to try to get this application to work. The DevOps aspects are still a work in progress but the core functionality of my application is there.
 
-The technologies I used were FastAPI, PostgreSQL, SQLAlchemy, PyTest, Postman, Docker, and Github Actions. FastAPI was a convenient way to build this API and provided the docs feature to provide some nice documentation and interface. PostgreSQL was used because of the structured queries and relational data sets I needed to make/have and I used SQLAlchemy as the ORM to connect my Python code to the database instead of writing actual SQL to query the database. PyTest was used for easy integration testing as it provided nice feedback with a clean interface and Postman was used to test the API as I went. Docker and Github Actions were used for DevOps purposes as they were the most convenient and popular choices and I wanted to take a crack at and learn these tools.
+The technologies I used were FastAPI, PostgreSQL, SQLAlchemy, PyTest, Postman, Docker, and GitHub Actions. FastAPI was a convenient way to build this API and provided the docs feature to provide some nice documentation and interface. PostgreSQL was used because of the structured queries and relational data sets I needed to make/have and I used SQLAlchemy as the ORM to connect my Python code to the database instead of writing actual SQL to query the database. PyTest was used for easy integration testing as it provided nice feedback with a clean interface and Postman was used to test the API as I went. Docker and Github Actions were used for DevOps purposes as they were the most convenient and popular choices and I wanted to take a crack at and learn these tools.
